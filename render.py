@@ -116,8 +116,8 @@ class GameOfLife:
             if not paused:
                 self.draw_grid()
                 self.update_generation()
-                time.sleep(0.2)
+                time.sleep(0)
 
 
 if __name__ == '__main__':
-    GameOfLife(80, 80, 20, [[0,0,0,0],[0,1,1,0],[0,1,1,0],[0,0,0,0]]).run()
+    GameOfLife(1000, 500, 5).run()
